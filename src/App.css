@@ -1,0 +1,42 @@
+/* src/App.css */
+.App {
+  display: flex;
+}
+
+.navbar {
+  background-color: #e0f7fa; /* Slightly blue color */
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.content {
+  margin-left: 220px; /* Adjust according to the navbar width */
+  padding: 20px;
+  width: calc(100% - 220px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 10px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #00796b;
+  font-weight: bold;
+}

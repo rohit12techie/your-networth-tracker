@@ -1,0 +1,41 @@
+/* src/MonthlyExpenses.css */
+
+.financial-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.cash-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #ff3333;
+}
+
+body {
+  background-color: #ffffff; /* Light pink background */
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,19 @@
+/* src/Investment.css */
+
+.financial-sections {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cash-section {
+    width: 45%;
+  }
+
+  body {
+    background-color: #00e6e6; /* Light pink background */
+  }
+
+  h1, h2 {
+    font-weight: bold;
+    color: #333;
+  }

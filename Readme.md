@@ -1,4 +1,4 @@
 # My Networth Tracker
-## This I have started to learn Node JS, react, web development. 
+This I have started to learn Node.js, React.js and web-development. 
 
 

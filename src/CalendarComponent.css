@@ -1,0 +1,34 @@
+/* src/components/CalendarComponent/CalendarComponent.css */
+.calendar-container {
+  margin: 20px 0;
+}
+
+.month-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.month {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.month.current {
+  background-color: #ffeb3b;
+}
+
+.month.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.month:hover {
+  background-color: #ddd;
+}

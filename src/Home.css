@@ -1,0 +1,21 @@
+/* src/components/Home/Home.css */
+.home-container {
+    padding: 20px;
+  }
+
+  .net-worth {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1, h2 {
+    font-weight: bold;
+    color: #333;
+  }
+
+  p {
+    font-size: 1.2em;
+    color: #555;
+  }

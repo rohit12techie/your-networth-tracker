@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './MonthlyExpenses.css';
 
 const MonthlyExpenses = () => {
-  const referenceCashIn = [{ source: 'Salary', amount: 201694 }, { source: 'Kaushal', amount: 8000 }];
+  const referenceCashIn = [{ source: 'Salary', amount: 201694 }, { source: 'Other Income', amount: 8000 }];
   const referenceCashOut = [{ source: 'Home EMI', amount: 77645 }, { source: 'Room Rent', amount: 26000 }, { source: 'SIP', amount: 48121 }, { source: 'CreditCard', amount: 52300 }, { source: 'Misc', amount: 10000 }];
 
   const [cashIn, setCashIn] = useState(JSON.parse(localStorage.getItem('cashIn')) || [{ source: '', amount: 0 }]);

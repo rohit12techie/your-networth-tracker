@@ -8,13 +8,11 @@ const MonthlyExpenses = () => {
 
   const [cashIn, setCashIn] = useState(JSON.parse(localStorage.getItem('cashIn')) || [{ source: '', amount: 0 }]);
   const [cashOut, setCashOut] = useState(JSON.parse(localStorage.getItem('cashOut')) || [{ source: '', amount: 0 }]);
-  const [monthlyExpenses, setMonthlyExpenses] = useState(localStorage.getItem('monthlyExpenses') || 0);
 
   useEffect(() => {
     localStorage.setItem('cashIn', JSON.stringify(cashIn));
     localStorage.setItem('cashOut', JSON.stringify(cashOut));
-    localStorage.setItem('monthlyExpenses', monthlyExpenses);
-  }, [cashIn, cashOut, monthlyExpenses]);
+  }, [cashIn, cashOut]);
 
   const handleCashInChange = (index, field, value) => {
     const newCashIn = [...cashIn];
@@ -50,7 +48,7 @@ const MonthlyExpenses = () => {
   const isAddCashOutDisabled = cashOut[cashOut.length - 1].source === '' || cashOut[cashOut.length - 1].amount === 0;
 
   const totalCashIn = cashIn.reduce((total, item) => total + Number(item.amount), 0);
-  const totalCashOut = cashOut.reduce((total, item) => total + Number(item.amount), 0) + Number(monthlyExpenses);
+  const totalCashOut = cashOut.reduce((total, item) => total + Number(item.amount), 0);
   const cashLeftInHand = totalCashIn - totalCashOut;
 
   return (
@@ -98,10 +96,6 @@ const MonthlyExpenses = () => {
                   <td><button onClick={() => removeCashOut(index)}>X</button></td>
                 </tr>
               ))}
-              <tr>
-                <td>Monthly Expenses</td>
-                <td><input type="number" value={monthlyExpenses} onChange={(e) => setMonthlyExpenses(e.target.value)} /></td>
-              </tr>
             </tbody>
           </table>
           <button onClick={addCashOut} disabled={isAddCashOutDisabled}>Add Cash Out</button>

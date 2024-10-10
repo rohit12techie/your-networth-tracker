@@ -1,21 +1,44 @@
 /* src/components/Home/Home.css */
-.home-container {
-    padding: 20px;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
-  .net-worth {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+.header {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px; /* Space before the header */
+}
 
-  h1, h2 {
-    font-weight: bold;
-    color: #333;
-  }
+.home-sections {
+  display: grid;
+  justify-content: center;
+  margin: 10px;
+  flex-grow: 0;
+}
 
-  p {
-    font-size: 1.2em;
-    color: #555;
-  }
+.net-worth-section {
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.net-worth-section h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}

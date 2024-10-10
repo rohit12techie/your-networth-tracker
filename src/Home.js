@@ -23,13 +23,18 @@ const Home = () => {
   const netWorth = cashLeftInHand + totalInvestment;
 
   return (
-    <div className="home-container">
+    <div className="container">
+      <header className="header">
+        <h1>Financial Dashboard</h1>
+      </header>
       <CalendarComponent onDateChange={setSelectedDate} />
-      <h1>Net Worth</h1>
-      <div className="net-worth">
-        <p>Total Cash Left in Hand: ₹{cashLeftInHand}</p>
-        <p>Total Investment: ₹{totalInvestment}</p>
-        <h2>Net Worth: ₹{netWorth}</h2>
+      <div className="home-sections">
+        <div className="net-worth-section">
+          <h2>Net Worth Overview</h2>
+          <p>Total Cash Left in Hand: ₹{cashLeftInHand}</p>
+          <p>Total Investment: ₹{totalInvestment}</p>
+          <h2>Net Worth: ₹{netWorth}</h2>
+        </div>
       </div>
     </div>
   );

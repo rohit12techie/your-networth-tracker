@@ -52,8 +52,10 @@ const MonthlyExpenses = () => {
   const cashLeftInHand = totalCashIn - totalCashOut;
 
   return (
-    <div>
-      <h1>Financial Dashboard</h1>
+    <div className="container">
+      <header className="header">
+        <h1>Monthly Expenses</h1>
+      </header>
       <div className="financial-sections">
         <div className="cash-section">
           <h2>Cash IN</h2>
@@ -102,10 +104,10 @@ const MonthlyExpenses = () => {
           <p>Total Cash Out: {totalCashOut}</p>
         </div>
       </div>
-      <div>
+      <footer className="footer">
         <h2>Cash Left in Hand</h2>
         <p>{cashLeftInHand}</p>
-      </div>
+      </footer>
     </div>
   );
 };

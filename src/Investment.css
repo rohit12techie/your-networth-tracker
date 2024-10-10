@@ -1,4 +1,18 @@
 /* src/Investment.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+}
+
 .investment-section {
   background-color: #fff;
   padding: 20px;

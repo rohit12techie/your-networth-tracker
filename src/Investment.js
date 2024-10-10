@@ -31,8 +31,10 @@ const Investment = () => {
   const totalInvestment = investments.reduce((total, item) => total + Number(item.amount), 0);
 
   return (
-    <div>
-      <h1>Monthly Investment</h1>
+    <div className="container">
+      <header className='header'>
+        <h1>Monthly Investment</h1>
+      </header>
       <div className="investment-section">
         <table>
           <thead>
